@@ -30,7 +30,7 @@ public class CustomerServiceTest {
 
     @Test
     public void getCustomerListTest()throws Exception{
-        List<Customer> customerList=customerService.getCustomerList();
+        List<Customer> customerList=customerService.getCustomerList("");
         Assert.assertEquals(2,customerList.size());
     }
 
@@ -56,7 +56,7 @@ public class CustomerServiceTest {
         long id=1;
         Map<String,Object> filedMap=new HashMap<String, Object>();
         filedMap.put("contact","Eric");
-        boolean result=customerService.updateCustomer(filedMap);
+        boolean result=customerService.updateCustomer(id,filedMap);
         Assert.assertTrue(result);
     }
 
