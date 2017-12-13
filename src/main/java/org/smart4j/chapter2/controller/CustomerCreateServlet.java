@@ -8,11 +8,13 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Created by admin on 2017/11/22.
+ * Created by admin on 2017/12/13.
  * 创建客户
  */
+
 @WebServlet("/customer_create")
 public class CustomerCreateServlet extends HttpServlet{
+
     /**
      * 进入 创建客户 界面
      */
